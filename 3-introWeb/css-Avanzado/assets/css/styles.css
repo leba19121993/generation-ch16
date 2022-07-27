@@ -1,0 +1,13 @@
+/* fuente con etiqueta font-family */
+
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Fascinate&family=Fuggles&display=swap');
+
+h1{
+    font-family: 'Fuggles', cursive;
+
+}
+
+p{
+    font-family: 'Creepster', cursiva;
+}
+

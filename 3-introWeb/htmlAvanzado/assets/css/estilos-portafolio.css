@@ -1,0 +1,36 @@
+*{
+    font-size: 1.5rem;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(230, 35, 13);
+    width: auto;
+    height: 200px;
+}
+
+main{
+    
+    background-color: rgb(215, 250, 236);
+    width: auto;
+    height: 200px;
+}
+
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(211, 43, 226);
+    width: auto;
+    height: 200px;
+}
+
+/* .cuadro{
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(226, 43, 43);
+} */
