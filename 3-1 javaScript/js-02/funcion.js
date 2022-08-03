@@ -27,7 +27,18 @@ let res = miResta(10,4);
 console.log("La resta es " + res);
 
 
-function nombre(ABel , López , Ortiz) 
-{
+function miNombre(Abel , López , Ortiz){
+    nombre = nombre + " " + apellidoPaterno + " " + apellidoMaterno
+    return (nombre)
     
 }
+let nombre = "Abel"
+let apellidoPaterno = "Lopez"
+let apellidoMaterno = "Ortiz"
+console.log("Mi nombre es : " + miNombre(nombre,apellidoPaterno,apellidoMaterno));
+
+function miDiv(a,b){
+    return(a/b);
+
+}
+console.log(miDiv(50, 10));
