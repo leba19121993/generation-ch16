@@ -1,103 +1,82 @@
-/* console.log(document.); */
+/* Document Object Model (DOM) */
 
-
-/* getElementById() */
+//getElementById()
 
 console.log(document.getElementById('parrafo1'));
 
-const parrafo1 = document.getElementById('parrafo1');
-
+const parrafo1 = document.getElementById('parrafo1'); // para no volver a escribir console.log(document.getElementById('parrafo1')); 
 console.log(parrafo1.textContent);
 
-parrafo1.textContent = "Hola desde el parrfo 1";
+parrafo1.textContent = "Hola pai, yo reemplaze lo que habia aqui"; // reemplaza el texto por lo escrito en las comillas
+console.log(parrafo1.textContent);
 
-console.log(parrafo1.style);
+console.log(parrafo1.style); // para ver lo que podemos modificar 
 
-parrafo1.style.color ="red";
-parrafo1.style.backgroundColor = "yellow";
+parrafo1.style.color = 'red';
+parrafo1.style.backgroundColor = 'yellow';
 
 
-/* querySelector()
+//querrySelector()
 
-*/
 //etiqueta = p
-// clase = .parrafo
-//id = #parrafo1
+//clase = .parrafo
+//id = #parrafo
 
 
-const parrafo2 = document.querySelector(".parrafo");
-console.log(parrafo1.textContent);
+const parrafo2 = (document.querySelector(".parrafo"));
+console.log(parrafo2.textContent);
 
-/* \n -- inserta un salto de linea === <br> */
-
-parrafo2.textContent += "\n Modificando el contenido desde JavaScript";
-
-const parrafo3 = document.querySelector(".parrafo");
-console.log(parrafo1.textContent);
-
-/* \n -- inserta un salto de linea === <br> */
-
-parrafo3.textContent += "\n Modificando el contenido desde JavaScript";
+parrafo2.textContent += " MODIFICANDO Y AGREGANDO DESDE JAVA PAI"
 
 
+//querrySelectorAll() ó Lista de nodos - node list
 
-/* querySelectorAll --  lista de nodos*/
+const parrafo = document.querySelectorAll ('p');
+console.log(parrafo);
 
-const parrafos = document.querySelectorAll('p');
-console.log(parrafos[2]);
+parrafo [2].style.fontSize = "2rem"
 
-parrafos[2].style.fontSize = "2rem"
 
 //css - font-size
-//js - fontsize - lower camel case
+//js 
 
+//modificar los atributos HTML
 
-/* Modificar los atributos de html */
-
-const enlace = document.getElementById('enlace')
+const enlace = document.getElementById ("enlace");
 console.log(enlace.href);
 
-enlace.href = 'htts://www.youtube.com/';
-enlace.target = "blank";
-enlace.textContent = "Enlace de Youtube"
+enlace.href ="https://www.youtube.com/" //cambiamos el enlace de google a youtube
+enlace.target = "_blank"; // para cambiar a otra pestaña
+enlace.textContent ="Enlace a Youtube"
 
 
 
 
-/* Remplazar contenido */
+//modificar 3 atributos al HTML desde JS
+
+const h1 = document.querySelector ("h1");
+h1.style.color = "brown"
 
 
-const parrafo4 = document.getElementById("parrafo4")
 
-console.log(parrafo4.nodeName);
+
+
+
+/* Reemplazar contenido */
+
+const parrafo4 = document.getElementById ('parrafo4'); //1er paso Llamar al elemento 
+
+console.log(parrafo4.nodeName); //el node.Name es un TypeOf (muestra el tipo del elemento)
 console.log(parrafo4.textContent);
-console.log(parrafo4.innerHTML);//muestra el html que haya en el interior de el elemento
+console.log(parrafo4.innerHTML); //muestra el html que haya en el interior del elemento
+console.log(parrafo4.outerHTML);// muestra el contenido del html, incluyendo al elemento
 
-console.log(parrafo4.outerHTML);//muestra el contenido html, inlcuyendo al elemento
+//parrafo4.innerHTML = '<a href="http://google.com">Enlace</a>' //Sustituye el contenido del elemento
 
-/* parrafo4.outerHTML = '<a href="http://google.com">Enlace</a>' //remplaza el elemento completo
-
-parrafo4.innerHTML = '<a href="http://google.com">Enlace</a>' //remplaza el contenido del elemento */
-
-/* parrafo4.innerHTML = '<div class="elemento">Este es un div</div>'; */
-
-/* Js permite modificar las clases css
-utilizando style */
+//parrafo4.outerHTML = '<a href="http://google.com">Enlace</a>' //Sustituye el elemento, puede ser a un div,h1,p,col etc...
 
 console.log(parrafo4.classList.contains("elemento"));
-
-const cambiaColor = () =>{
-    parrafo4.classList.toggle("elemento")
-
-}
-cambiaColor()//se agrega la clase
-cambiaColor()//se quita la clase
-
-
-
-
-
-
+parrafo4.classList.add('elemento');
 
 
 
