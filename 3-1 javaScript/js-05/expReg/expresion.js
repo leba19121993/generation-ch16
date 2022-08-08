@@ -14,7 +14,29 @@ let buscar1 = /LA/
 
 console.log(buscar1.test(texto1)); */
 
-let texto2 = "te marque anoche"
-let buscar2 = /[eo]/
+let texto2 = "lo numeros primos son 2 3 5 7 dentro de los 10 primeros numeros"
+let buscar2 = /\d{3}/;
 
 console.log(buscar2.test(texto2));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
