@@ -4,7 +4,7 @@ public class EjemploVariables {
         //Declaración de variables String y caracter:
         String nombre = "Hugo";
         String saludo = "Hola esto es un ejemplo de variables";
-        char espacio = '\u0040';
+        char espacio = '\u0040';//acsi unicode
         char caracter ='a';
 
         System.out.println("espacio =" + espacio);
@@ -68,6 +68,9 @@ public class EjemploVariables {
         System.out.println("long corresponde en bits: " + Long.SIZE);
         System.out.println("long valor maximo: " + Long.MAX_VALUE);
         System.out.println("long valor minimo: " + Long.MIN_VALUE);
+        
+        var miVar = 5;
+        System.out.println("miVar = " + miVar);
 
 
 
