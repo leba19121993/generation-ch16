@@ -26,6 +26,7 @@ public class Colecciones2 {
 
         for(String nombre : miSet){
             System.out.println(nombre);
+
         }
 
 
