@@ -1,4 +1,4 @@
-public class EjemploVariables {
+cd ..public class EjemploVariables {
     public static void main(String[] args) {
 
         //Declaración de variables String y caracter:

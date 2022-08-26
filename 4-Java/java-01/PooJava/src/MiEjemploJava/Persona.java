@@ -7,14 +7,40 @@ public class Persona {
         private int edad;
         private int nss;
 
-        Persona(){
+        public Persona(){
 
         }
+        //Generar constructor set
 
-    public Persona(String nombre, int edad, int nss) {
+    public void setNombre(String nombre) {
         this.nombre = nombre;
+    }
+
+    public void setEdad(int edad) {
         this.edad = edad;
+    }
+
+    public void setNss(int nss) {
         this.nss = nss;
+    }
+
+
+    //generar constructor this
+    //public Persona(String nuevonombre, int nuevaedad, int nuevonss) {
+      //  this.nombre = nuevonombre;
+        //this.edad = nuevaedad;
+        //this.nss = nuevonss;}
+    //generar construcor get
+    public String getNombre() {
+        return nombre;
+    }
+
+    public int getEdad() {
+        return edad;
+    }
+
+    public int getNss() {
+        return nss;
     }
 
     void caminar() {
