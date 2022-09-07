@@ -28,6 +28,10 @@ VALUES ('Abel','Lopez','5583317593','Cipres'),
 
 SELECT * FROM clientes;
 
+DROP TABLE clientes;
+
+DROP TABLE compra;
+
 
 
 
